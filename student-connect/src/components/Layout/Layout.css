@@ -1,0 +1,52 @@
+body {
+    background: rgb(34,193,195);
+    /*background: linear-gradient(90deg, rgb(117, 167, 224) 0%, rgb(213, 241, 166) 100%);*/
+    background: linear-gradient(0deg, rgb(241, 241, 241) 0%, rgb(138, 195, 233) 100%);
+    /* To make the background stretch to the whole viewport */
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm, .nav {
+    justify-self: center;
+    text-align: center;
+    background-color: white;
+}
+
+.container-smaller {
+	margin: auto;
+	width: 25%;
+}
+
+.text-left {
+    text-align: left;
+}
+
+label {
+    font-weight:500;
+}
+
+.capitalise {
+    text-transform: capitalize;
+}
+
+/* Targetting elements with the Bootstrap "primary" colour to change their blue to a nicer one */
+[class*="-primary"], [class*="-primary"]:focus {
+    background-color:#4696f3;
+    border-color:#4696f3;
+}
+[class*="-primary"]:hover {
+    background-color:#4289db;
+    border-color:#4289db;
+}
+/* Seems we have to be more intentional (!important) with overriding the active (clicked) state */
+[class*="-primary"]:active {
+    background-color:#3c7cc4!important;
+    border-color:#3c7cc4!important;
+}
+
+input:read-only {
+    background-color: #fafafa!important;
+}

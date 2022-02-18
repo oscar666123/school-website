@@ -1,0 +1,24 @@
+{
+  "name": "admin-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/lachlan-t-qut/admin-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/lachlan-t-qut/admin-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase-admin": "^9.7.0"
+  },
+  "engines": {
+    "node": "v12.16.1"
+  }
+}
